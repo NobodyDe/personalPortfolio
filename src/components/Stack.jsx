@@ -29,6 +29,7 @@ export default function Stack() {
           ),
         )}
       </div>
+      <hr className="my-2 border-neutral-800" />
     </div>
   );
 }
