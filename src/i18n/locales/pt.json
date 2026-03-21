@@ -16,5 +16,10 @@
   "projects": {
     "heading": "Principais Projetos",
     "loading": "Carregando projetos..."
+  },
+  "connect": {
+    "heading": "Conexão",
+    "description": "Reach me at henriquesantos.game@gmail or connect on social media below.",
+    "right": "@ 2026 Henrique Dev"
   }
 }

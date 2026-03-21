@@ -4,13 +4,13 @@
     "title": "Engenheiro de Software",
     "nav": [
       { "label": "Home", "slug": "" },
-      { "label": "Projetos", "slug": "projetos" },
+      { "label": "Projects", "slug": "projetos" },
       { "label": "Stack", "slug": "stack" },
-      { "label": "Conectar", "slug": "conectar" }
+      { "label": "Connect", "slug": "conectar" }
     ]
   },
   "about": {
-    "heading": "Olá mundo!",
+    "heading": "Hello Word!",
     "description": "Bem vindo ao meu site! Sou Engenheiro de Software em formação..."
   },
   "projects": {

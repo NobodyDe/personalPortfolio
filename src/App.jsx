@@ -3,6 +3,7 @@ import Sobre from "./components/Sobre";
 import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import Connect from "./components/Connect";
 
 function AppLayout() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
       <Sobre />
       <Projects />
       <Stack />
+      <Connect />
     </>
   );
 }
@@ -34,7 +36,7 @@ export default function App() {
         <Route path="projetos" element={<Projects />} />
         <Route path="stack" element={<Stack />} />
       </Route>
-      <Route path="/Home" element={<Navigate to="pt" replace />} />
+      <Route path="/" element={<Navigate to="pt" replace />} />
     </Routes>
   );
 }
