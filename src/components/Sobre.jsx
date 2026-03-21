@@ -1,9 +1,8 @@
-import Projects from "./Projects";
 import Text from "./Text";
 
 export default function Sobre() {
   return (
-    <div className="flex h-min w-full flex-col overflow-visible md:gap-3 md:py-20">
+    <div className="flex h-min w-full flex-col overflow-visible md:gap-3">
       <Text as="h3" variant="heading-lg">
         Olá mundo!
       </Text>
@@ -13,7 +12,6 @@ export default function Sobre() {
         SaaS escaláveis e automação de processos que geram eficiência
         operacional.
       </Text>
-      <Projects />
     </div>
   );
 }
