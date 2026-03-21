@@ -8,7 +8,7 @@ export const textVariants = cva("font-sans", {
     variant: {
       "body-md": "text-base leading-6 font-normal text-primary",
       "body-md-secundary": "text-base leading-6 font-normal text-secundary",
-      "heading-lg": "text-lg leading-7 font-bold text-primary",
+      "heading-lg": "text-xl leading-7 font-bold text-primary",
       "subHeading-sm": "text-sm leading-5 font-normal text-secundary",
       inherit: "text-inherit",
     },

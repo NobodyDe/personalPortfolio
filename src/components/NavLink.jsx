@@ -1,6 +1,7 @@
 import { cva } from "class-variance-authority";
 import Text from "./Text";
 import Themes from "./Themes";
+import { Link, useLocation } from "react-router-dom";
 
 export const navLinkVariants = cva(
   "flex items-center justify-between w-full py-1.5 rounded transition-colors cursor-pointer text-sm",
@@ -16,25 +17,27 @@ export const navLinkVariants = cva(
 );
 
 export default function NavLink({
-  as: Component = "a",
   active,
   themes,
   className,
   children,
+  to,
   ...props
 }) {
+  const location = useLocation();
   return (
-    <Component
+    <Link
       className={navLinkVariants({
-        active: location.pathname === "/" + children,
+        active: location.pathname === to,
         className,
       })}
       {...props}
+      to={to}
     >
       <Text as="span" variant="inherit">
         {children}
       </Text>
       <Themes>{themes}</Themes>
-    </Component>
+    </Link>
   );
 }
