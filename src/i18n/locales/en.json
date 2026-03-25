@@ -1,7 +1,25 @@
 {
+  "seo": {
+    "home": {
+      "title": "Home",
+      "description": "Portfolio of Henrique Santos, Full Stack Software Engineer."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Explore the main projects developed by Henrique Santos."
+    },
+    "stack": {
+      "title": "Stack",
+      "description": "Discover the main development technologies used."
+    },
+    "connect": {
+      "title": "Connect",
+      "description": "Get in touch through the main contact channels."
+    }
+  },
   "sidebar": {
     "name": "Henrique Santos",
-    "title": "Engenheiro de Software",
+    "title": "Software Engineer",
     "nav": [
       { "label": "Home", "slug": "" },
       { "label": "Projects", "slug": "projetos" },
@@ -10,11 +28,119 @@
     ]
   },
   "about": {
-    "heading": "Hello Word!",
-    "description": "Bem vindo ao meu site! Sou Engenheiro de Software em formação..."
+    "heading": "Hello world!",
+    "description": "Welcome to my website! I'm a Software Engineer in training, with strong Full Stack expertise. Proven experience building scalable SaaS platforms and automating processes that drive operational efficiency."
   },
   "projects": {
-    "heading": "Principais Projetos",
-    "loading": "Carregando projetos..."
+    "heading": "Main Projects",
+    "loading": "Loading projects...",
+    "button": "See more"
+  },
+  "connect": {
+    "heading": "Connect",
+    "description": "Reach me by email at [henriquesantos.game@gmail.com](mailto:henriquesantos.game@gmail.com) or connect with me on the social media below.",
+    "right": "@ 2026 Henrique Dev"
+  },
+  "stack": {
+    "heading": "Development Stack.",
+    "description": "All the Technologies/Frameworks, Applications, Tools and Services I use to build my projects.",
+    "techs": [
+      {
+        "name": "Next.js",
+        "description": "I use Next.js as the frontend framework across all my projects. Its server-side features make it excellent for SEO."
+      },
+      {
+        "name": "Tailwind CSS",
+        "description": "I use Tailwind CSS to speed up interface development and standardize styling across projects."
+      },
+      {
+        "name": "TypeScript",
+        "description": "I use TypeScript in full stack development to write safer, typed, and more scalable code."
+      },
+      {
+        "name": "React.js",
+        "description": "I use React.js to build modern, component-based interfaces, mainly for dashboards and web applications."
+      },
+      {
+        "name": "Backend."
+      },
+      {
+        "name": "Node.js",
+        "description": "I use Node.js on the backend, focused on full stack development and building scalable solutions."
+      },
+      {
+        "name": "Express",
+        "description": "I know and use Express to structure APIs and backend services with Node.js."
+      },
+      {
+        "name": "Fastify",
+        "description": "I have experience with Fastify for building high-performance backend APIs."
+      },
+      {
+        "name": "Python",
+        "description": "I use Python mainly for automating repetitive tasks, web scraping, and processing operational routines."
+      },
+      {
+        "name": "FastAPI",
+        "description": "I know FastAPI for building Python APIs in a fast and organized way."
+      },
+      {
+        "name": "Database."
+      },
+      {
+        "name": "MySQL",
+        "description": "I have knowledge in MySQL for data modeling, querying, and backend application integration."
+      },
+      {
+        "name": "PostgreSQL",
+        "description": "I use PostgreSQL as the database in full stack projects and SaaS applications."
+      },
+      {
+        "name": "Supabase",
+        "description": "I know Supabase as a database and backend solution for web applications."
+      },
+      {
+        "name": "PocketBase",
+        "description": "I have experience with PocketBase for supporting applications with a lightweight backend and data management."
+      },
+      {
+        "name": "DevOps & Cloud."
+      },
+      {
+        "name": "AWS EC2",
+        "description": "I use AWS EC2 as a cloud service to host applications and support project infrastructure."
+      },
+      {
+        "name": "Oracle Cloud Services",
+        "description": "I have basic knowledge of Oracle Cloud Services to support cloud infrastructure solutions."
+      },
+      {
+        "name": "Docker",
+        "description": "I know Docker for standardizing environments and streamlining application execution and deployment."
+      },
+      {
+        "name": "Kubernetes",
+        "description": "I have knowledge of Kubernetes as a container orchestration tool in scalable environments."
+      },
+      {
+        "name": "Version Control & Collaboration."
+      },
+      {
+        "name": "Jira",
+        "description": "I use Jira as my main project and task management tool, organizing sprints, backlogs, and team workflows. I leverage time tracking to log hours per activity and monitor delivery progress, while also integrating CI/CD pipelines directly into issues to track the full development lifecycle."
+      },
+      {
+        "name": "Git",
+        "description": "I use Git for code versioning and organizing the development workflow across projects."
+      },
+      {
+        "name": "GitHub",
+        "description": "I use GitHub for versioning, repository storage, and collaboration throughout development."
+      },
+      {
+        "name": "Bitbucket",
+        "description": "I know Bitbucket as a code versioning and collaboration platform."
+      }
+    ]
   }
 }
