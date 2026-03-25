@@ -3,6 +3,7 @@ import { useGithub } from "../services/useGithub";
 import { ArrowRight } from "lucide-react";
 import projectsImages from "../data/projectImages";
 import { Link, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const topProjects = [
   "uphold-bpo-dashboard",
@@ -11,6 +12,7 @@ const topProjects = [
 ];
 
 export default function Projects() {
+  const { t } = useTranslation();
   const { projects, loading, error } = useGithub(topProjects);
   // const { lang } = useParams();
 
@@ -26,7 +28,7 @@ export default function Projects() {
         ← Voltar
       </Link> */}
       <Text as="h3" variant="heading-lg" className="flex md:gap-4">
-        Principais Projetos
+        {t("projects.heading")}
       </Text>
       <div>
         {projects.map((repo) => (
@@ -59,7 +61,8 @@ export default function Projects() {
           variant="subHeading-sm"
           className=" hover:text-primary transition-colors flex flex-row items-center cursor-pointer gap-1 "
         >
-          Veja mais <ArrowRight size={15} />
+          {t("projects.button")}
+          <ArrowRight size={15} />
         </Text>
       </div>
     </div>

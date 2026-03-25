@@ -10,7 +10,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources: { pt: { translation: pt }, en: { translation: en } },
-    fallBackLng: "pt",
+    fallbackLng: "pt",
     detection: {
       order: ["path", "navigator"],
       lookupFromPathIndex: 0,

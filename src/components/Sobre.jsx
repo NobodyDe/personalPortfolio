@@ -9,10 +9,7 @@ export default function Sobre() {
         {t("about.heading")}
       </Text>
       <Text as="span" variant="body-md-secundary">
-        Bem vindo ao meu site! sou Engenheiro de Software em formação, com forte
-        atuação Full Stack. Experiência comprovada na criação de plataformas
-        SaaS escaláveis e automação de processos que geram eficiência
-        operacional.
+        {t("about.description")}
       </Text>
     </div>
   );

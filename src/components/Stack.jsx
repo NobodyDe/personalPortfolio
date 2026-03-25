@@ -1,28 +1,29 @@
 import Text from "./Text";
-import techs from "../data/techs";
+import { useTranslation } from "react-i18next";
 
 export default function Stack() {
+  const { t } = useTranslation();
+  const techs = t("stack.techs", { returnObjects: true });
   return (
     <div className="flex flex-col gap-3 border-b">
       <Text as="h3" variant="heading-lg" className="">
-        Stack de Desenvolvimento.
+        {t("stack.heading")}
       </Text>
       <Text as="p" variant="body-md-secundary" className="">
-        Todas as Tecnologias/Frameworks, Aplicativos, Ferramentas e Serviços que
-        utilizo para desenvolver os meus projetos.
+        {t("stack.heading")}
       </Text>
       <hr className="my-2 border-neutral-800" />
       <div className="flex flex-col gap-6">
         {techs.map((text) =>
           !text.description ? (
-            <Text as="h3" variant="heading-lg">
+            <Text as="h3" variant="heading-lg" key={text.name}>
               {text.name}
             </Text>
           ) : (
             <Text as="p" variant="body-md" key={text.name}>
               {text.name}
               {" - "}
-              <Text as="span" variant="body-md-secundary">
+              <Text as="span" variant="body-md-secundary" key={text.name}>
                 {text.description}
               </Text>
             </Text>
