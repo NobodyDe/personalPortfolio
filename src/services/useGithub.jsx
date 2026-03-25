@@ -1,11 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+
+const cache = {};
 
 export function useGithub(topRepos) {
-  const [projects, setProjects] = useState([]);
+  const cacheKey = topRepos.join(",");
+
+  const [projects, setProjects] = useState(cache[cacheKey]?.data || []);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    if (cache[cacheKey]) {
+      setProjects(cache[cacheKey].data);
+      setLoading(false);
+      return;
+    }
+
     const fetchRepoData = async () => {
       try {
         setLoading(true);
@@ -18,6 +28,7 @@ export function useGithub(topRepos) {
         );
 
         const results = await Promise.all(promises);
+        cache[cacheKey] = { data: results };
         setProjects(results);
       } catch (err) {
         setError(err.message);
@@ -25,10 +36,8 @@ export function useGithub(topRepos) {
         setLoading(false);
       }
     };
-    if (topRepos.length > 0) {
-      fetchRepoData();
-    }
-  }, [topRepos]);
+    fetchRepoData();
+  }, [cacheKey]);
 
   return { projects, loading, error };
 }

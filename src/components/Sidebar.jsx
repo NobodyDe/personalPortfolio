@@ -17,7 +17,7 @@ export default function Sidebar() {
           {t("sidebar.name")}
         </Text>
         <Text as="p" variant="subHeading-sm">
-          Software Engineer
+          {t("sidebar.title")}
         </Text>
       </div>
       <ul className="md:flex flex-col gap-2 hidden">
