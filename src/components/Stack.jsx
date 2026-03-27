@@ -1,3 +1,5 @@
+import DividerLine from "./DividerLine";
+import DivderLine from "./DividerLine";
 import Text from "./Text";
 import { useTranslation } from "react-i18next";
 
@@ -12,7 +14,7 @@ export default function Stack() {
       <Text as="p" variant="body-md-secundary" className="">
         {t("stack.heading")}
       </Text>
-      <hr className="my-2 border-neutral-800" />
+      <DividerLine />
       <div className="flex flex-col gap-6">
         {techs.map((text) =>
           !text.description ? (
@@ -30,7 +32,7 @@ export default function Stack() {
           ),
         )}
       </div>
-      <hr className="my-2 border-neutral-800" />
+      <DividerLine />
     </div>
   );
 }

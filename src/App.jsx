@@ -1,12 +1,14 @@
-import Sidebar from "./components/Sidebar";
-import Sobre from "./components/Sobre";
-import Stack from "./components/Stack";
-import Projects from "./components/Projects";
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
-import Connect from "./components/Connect";
-import { motion } from "framer-motion";
-import SEO from "./components/SEO";
-import { t } from "i18next";
+import Sidebar from './components/Sidebar';
+import Sobre from './components/Sobre';
+import Stack from './components/Stack';
+import Projects from './components/Projects';
+import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import Connect from './components/Connect';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
+import SEO from './components/SEO';
+import { t } from 'i18next';
+import Experience from './components/Experience';
 
 export function FadeIn({ children, delay = 0 }) {
   return (
@@ -36,14 +38,17 @@ function HomePage() {
   return (
     <>
       <SEO
-        title={t("seo.home.title")} // "Home"
-        description={t("seo.home.description")} // "Portfólio de Henrique Santos..."
+        title={t('seo.home.title')} // "Home"
+        description={t('seo.home.description')} // "Portfólio de Henrique Santos..."
       />
       <FadeIn>
         <Sobre />
       </FadeIn>
       <FadeIn delay={0.2}>
         <Projects />
+      </FadeIn>
+      <FadeIn delay={0.2}>
+        <Experience />
       </FadeIn>
       <FadeIn delay={0.4}>
         <Stack />
@@ -63,8 +68,8 @@ export default function App() {
           element={
             <FadeIn>
               <SEO
-                title={t("seo.projects.title")}
-                description={t("seo.projects.description")}
+                title={t('seo.projects.title')}
+                description={t('seo.projects.description')}
               />
               <Projects />
             </FadeIn>
@@ -75,8 +80,8 @@ export default function App() {
           element={
             <FadeIn>
               <SEO
-                title={t("seo.stack.title")}
-                description={t("seo.stack.description")}
+                title={t('seo.stack.title')}
+                description={t('seo.stack.description')}
               />
               <Stack />
             </FadeIn>
@@ -87,8 +92,8 @@ export default function App() {
           element={
             <FadeIn>
               <SEO
-                title={t("seo.connect.title")}
-                description={t("seo.connect.description")}
+                title={t('seo.connect.title')}
+                description={t('seo.connect.description')}
               />
               <Connect />
             </FadeIn>
