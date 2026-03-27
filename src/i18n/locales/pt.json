@@ -31,11 +31,68 @@
     "heading": "Olá mundo!",
     "description": "Bem vindo ao meu site! sou Engenheiro de Software em formação, com forte atuação Full Stack. Experiência comprovada na criação de plataformas SaaS escaláveis e automação de processos que geram eficiência operacional."
   },
+  "experience": {
+    "heading": "Experiência Profissional",
+    "jobs": [
+      {
+        "company": "Uphold Assessoria Contábil",
+        "role": "Desenvolvedor de Software",
+        "location": "São Paulo, SP",
+        "period": "Outubro 2023 - Presente",
+        "projects": [
+          {
+            "title": "Desenvolvimento de Plataforma SaaS para Clientes",
+            "bullets": [
+              "Implementação de um Dashboard de acessos com principais tecnologias como JavaScript, Tailwind, Node.js e ReactJS.",
+              "Banco de Dados baseado em PostgreSQL, com versionamento de código GitHub e serviço de nuvem AWS EC2.",
+              "A plataforma é utilizada por 35+ clientes, com mais de 200 acessos registrados.",
+              "Gerenciando inúmeros acessos diários à aplicação e base de dados, gerando aumento significativo na produtividade do setor e escalabilidade do atendimento.",
+              "Atualmente dou suporte e desenvolvo novas funcionalidades com foco em código limpo."
+            ]
+          },
+          {
+            "title": "Automação de Tarefas Repetitivas (RPA)",
+            "bullets": [
+              "Implementei automações de tarefas (Web Scraping) para extração de guias de impostos em sites da receita e prefeitura.",
+              "Desenvolvimento em Python, Selenium, Tesseract OCR e Openpyxl.",
+              "Automações implementadas reduziram significativamente o tempo de entrega de documentos aos clientes, aumentando a agilidade, eficiência e confiabilidade das entregas fiscais.",
+              "Utilizada por uma equipe de 7+ colaboradores."
+            ]
+          },
+          {
+            "title": "Projeto de Migração e Arquitetura Office 365",
+            "bullets": [
+              "Liderei a migração corporativa para o ecossistema Office 365, atuando na arquitetura da informação e desenvolvimento de páginas no SharePoint para centralizar a gestão de arquivos.",
+              "Gestão completa da migração: desde a configuração de hardware/software nas estações de trabalho até a administração de permissões de arquivos, otimizando o fluxo de trabalho e o consumo de arquivos em nuvem.",
+              "Atuei como facilitador técnico, o que resultou na rápida adoção das ferramentas e aumento significativo na produtividade e colaboração entre setores."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "AVIPAM Viagens & Turismo",
+        "role": "Assistente Administrativo",
+        "location": "",
+        "period": "Agosto 2022 - Agosto 2023",
+        "projects": [
+          {
+            "title": "Suporte Administrativo e Faturamento",
+            "bullets": [
+              "Auxílio no processo de faturamento da empresa, garantindo que todos os processos sejam cumpridos de forma precisa e eficiente.",
+              "Verificação de documentos, necessária para assegurar que todas as informações estejam completas e corretas.",
+              "Solicitado para auxiliar em outras tarefas administrativas da empresa."
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "projects": {
     "heading": "Principais Projetos",
     "loading": "Carregando projetos...",
     "button": "Veja mais"
   },
+
   "connect": {
     "heading": "Conexão",
     "description": "Entre em contato comigo pelo e-mail henriquesantos.game@gmail.com ou conecte-se comigo nas redes sociais abaixo.",

@@ -3,6 +3,7 @@ import Avatar from "./Avatar";
 import NavLink from "./NavLink";
 import Text from "./Text";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Sidebar() {
   const { t } = useTranslation();
@@ -32,6 +33,7 @@ export default function Sidebar() {
           </NavLink>
         ))}
       </ul>
+      <LanguageSwitcher />
     </aside>
   );
 }

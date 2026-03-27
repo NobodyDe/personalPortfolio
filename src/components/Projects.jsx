@@ -1,34 +1,27 @@
-import Text from "./Text";
-import { useGithub } from "../services/useGithub";
-import { ArrowRight } from "lucide-react";
-import projectsImages from "../data/projectImages";
-import { Link, useParams } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import Text from './Text';
+import { useGithub } from '../services/useGithub';
+import { ArrowRight } from 'lucide-react';
+import projectsImages from '../data/projectImages';
+import { useTranslation } from 'react-i18next';
+import DivderLine from './DividerLine';
 
 const topProjects = [
-  "uphold-bpo-dashboard",
-  "DragonBallAPI",
-  "SorteadorDeNumeros",
+  'uphold-bpo-dashboard',
+  'DragonBallAPI',
+  'SorteadorDeNumeros',
 ];
 
 export default function Projects() {
   const { t } = useTranslation();
   const { projects, loading, error } = useGithub(topProjects);
-  // const { lang } = useParams();
 
   if (loading) return <p>Carregando projetos</p>;
   if (error) return <p>Error {error}</p>;
 
   return (
     <div className="flex h-min w-full flex-col overflow-visible md:gap-3">
-      {/* <Link
-        to={`/${lang}/projetos`}
-        className="text-secundary hover:text-primary transition-colors text-sm mb-4"
-      >
-        ← Voltar
-      </Link> */}
       <Text as="h3" variant="heading-lg" className="flex md:gap-4">
-        {t("projects.heading")}
+        {t('projects.heading')}
       </Text>
       <div>
         {projects.map((repo) => (
@@ -61,10 +54,11 @@ export default function Projects() {
           variant="subHeading-sm"
           className=" hover:text-primary transition-colors flex flex-row items-center cursor-pointer gap-1 "
         >
-          {t("projects.button")}
+          {t('projects.button')}
           <ArrowRight size={15} />
         </Text>
       </div>
+      <DivderLine />
     </div>
   );
 }
