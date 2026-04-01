@@ -8,6 +8,10 @@
       "title": "Projetos",
       "description": "Conheça os principais projetos desenvolvidos por Henrique Santos."
     },
+    "experience": {
+      "title": "Experiência",
+      "description": "Conheça a trajetora e experiência profissional de Henrique Santos"
+    },
     "stack": {
       "title": "Stack",
       "description": "Conheça as principais tecnologias de desenvolvimento"
@@ -23,6 +27,7 @@
     "nav": [
       { "label": "Home", "slug": "" },
       { "label": "Projetos", "slug": "projetos" },
+      { "label": "Experiência", "slug": "experiencia" },
       { "label": "Stack", "slug": "stack" },
       { "label": "Conectar", "slug": "conectar" }
     ]
@@ -34,6 +39,52 @@
   "experience": {
     "heading": "Experiência Profissional",
     "jobs": [
+      {
+        "company": "Freelance",
+        "role": "Desenvolvedor Full Stack",
+        "location": "São Paulo, SP",
+        "period": "Fevereiro 2026 - Presente",
+        "projects": [
+          {
+            "title": "Desenvolvimento Frontend Avançado",
+            "bullets": [
+              "Criação de plataformas escaláveis com foco em performance e SEO, utilizando React e Next.js (com Server-Side Rendering e componentes assíncronos).",
+              "Implementação de interfaces Mobile First orientadas a Design System (processo Figma to Code).",
+              "Garantindo alta fidelidade e responsividade com Tailwind CSS."
+            ]
+          },
+          {
+            "title": "Arquitetura Backend & DevOps",
+            "bullets": [
+              "Desenvolvimento de APIs RESTful de alta performance utilizando Nest.js, Express e Python (FastAPI).",
+              "Documentação de endPoints com Swagger.",
+              "Implementação de banco de dados PostgreSQL e Supabase, utilizando ambientes conteinerizados com Docker.",
+              "Otimização de acesso a dados e modelagem relacional com Prisma ORM."
+            ]
+          },
+          {
+            "title": "Esteira de Deploy (CI/CD) & Qualidade de Código",
+            "bullets": [
+              "Automação de pipelines de integração e entrega contínua utilizando GitHub Actions.",
+              "Garantia de padronização e código limpo no versionamento através da implementação de Conventional Commits combinados com Husky, commitlint, ESLint, Prettier e lint-staged."
+            ]
+          },
+          {
+            "title": "Cultura de Testes (QA)",
+            "bullets": [
+              "Forte foco em confiabilidade da aplicação, desenvolvendo testes unitários e de integração com Vitest.",
+              "Implementação de testes End-to-End (E2E) robustos com Playwright e Jest-e2e."
+            ]
+          },
+          {
+            "title": "Metodologias Ágeis & Colaboração",
+            "bullets": [
+              "Atuação guiada pelo framework Scrum, com vivência prática no gerenciamento de pipelines de tarefas.",
+              "Time tracking e documentação técnica (Knowledge Base) utilizando o Jira."
+            ]
+          }
+        ]
+      },
       {
         "company": "Uphold Assessoria Contábil",
         "role": "Desenvolvedor de Software",

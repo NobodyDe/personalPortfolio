@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import SEO from './components/SEO';
 import { t } from 'i18next';
 import Experience from './components/Experience';
+import FooterInc from './components/FooterInc';
 
 export function FadeIn({ children, delay = 0 }) {
   return (
@@ -29,6 +30,7 @@ function AppLayout() {
 
       <main className="flex-1 flex flex-col md:pt-20 gap-8">
         <Outlet />
+        <FooterInc />
       </main>
     </div>
   );
@@ -48,7 +50,7 @@ function HomePage() {
         <Projects />
       </FadeIn>
       <FadeIn delay={0.2}>
-        <Experience />
+        <Experience isHome={true} />
       </FadeIn>
       <FadeIn delay={0.4}>
         <Stack />
@@ -72,6 +74,18 @@ export default function App() {
                 description={t('seo.projects.description')}
               />
               <Projects />
+            </FadeIn>
+          }
+        />
+        <Route
+          path="experiencia"
+          element={
+            <FadeIn>
+              <SEO
+                title={t('seo.experience.title')}
+                description={t('seo.experience.description')}
+              />
+              <Experience />
             </FadeIn>
           }
         />

@@ -8,6 +8,10 @@
       "title": "Projects",
       "description": "Explore the main projects developed by Henrique Santos."
     },
+    "experience": {
+      "title": "Experience",
+      "description": "Discover the trajectory and professional experience of Henrique Santos."
+    },
     "stack": {
       "title": "Stack",
       "description": "Discover the main development technologies used."
@@ -23,6 +27,7 @@
     "nav": [
       { "label": "Home", "slug": "" },
       { "label": "Projects", "slug": "projetos" },
+      { "label": "Experience", "slug": "experiencia" },
       { "label": "Stack", "slug": "stack" },
       { "label": "Connect", "slug": "conectar" }
     ]
@@ -30,6 +35,108 @@
   "about": {
     "heading": "Hello world!",
     "description": "Welcome to my website! I'm a Software Engineer in training, with strong Full Stack expertise. Proven experience building scalable SaaS platforms and automating processes that drive operational efficiency."
+  },
+  "experience": {
+    "heading": "Professional Experience",
+    "jobs": [
+      {
+        "company": "Freelance",
+        "role": "Full Stack Developer",
+        "location": "São Paulo, SP",
+        "period": "February 2026 - Present",
+        "projects": [
+          {
+            "title": "Advanced Frontend Development",
+            "bullets": [
+              "Creation of scalable platforms focused on performance and SEO, using React and Next.js (with Server-Side Rendering and asynchronous components).",
+              "Implementation of Mobile First interfaces oriented by Design System (Figma to Code process).",
+              "Ensuring high fidelity and responsiveness with Tailwind CSS."
+            ]
+          },
+          {
+            "title": "Backend Architecture & DevOps",
+            "bullets": [
+              "Development of high-performance RESTful APIs using Nest.js, Express, and Python (FastAPI).",
+              "Endpoint documentation with Swagger.",
+              "Implementation of PostgreSQL and Supabase databases, using containerized environments with Docker.",
+              "Data access optimization and relational modeling with Prisma ORM."
+            ]
+          },
+          {
+            "title": "Deploy Pipeline (CI/CD) & Code Quality",
+            "bullets": [
+              "Automation of continuous integration and delivery pipelines using GitHub Actions.",
+              "Ensuring standardization and clean code in versioning through the implementation of Conventional Commits combined with Husky, commitlint, ESLint, Prettier, and lint-staged."
+            ]
+          },
+          {
+            "title": "Testing Culture (QA)",
+            "bullets": [
+              "Strong focus on application reliability, developing unit and integration tests with Vitest.",
+              "Implementation of robust End-to-End (E2E) tests with Playwright and Jest-e2e."
+            ]
+          },
+          {
+            "title": "Agile Methodologies & Collaboration",
+            "bullets": [
+              "Action guided by the Scrum framework, with practical experience in task pipeline management.",
+              "Time tracking and technical documentation (Knowledge Base) using Jira."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Uphold Assessoria Contábil",
+        "role": "Software Developer",
+        "location": "São Paulo, SP",
+        "period": "October 2023 - Present",
+        "projects": [
+          {
+            "title": "Development of SaaS Platform for Clients",
+            "bullets": [
+              "Implementation of an access Dashboard using key technologies such as JavaScript, Tailwind, Node.js, and ReactJS.",
+              "Database based on PostgreSQL, with GitHub code versioning and AWS EC2 cloud service.",
+              "The platform is used by 35+ clients, with more than 200 registered accesses.",
+              "Managing numerous daily accesses to the application and database, generating a significant increase in department productivity and service scalability.",
+              "Currently providing support and developing new features with a focus on clean code."
+            ]
+          },
+          {
+            "title": "Repetitive Task Automation (RPA)",
+            "bullets": [
+              "Implemented task automations (Web Scraping) to extract tax guides from government and city council websites.",
+              "Development in Python, Selenium, Tesseract OCR, and Openpyxl.",
+              "Implemented automations significantly reduced document delivery time to clients, increasing agility, efficiency, and reliability of tax deliveries.",
+              "Used by a team of 7+ collaborators."
+            ]
+          },
+          {
+            "title": "Office 365 Migration and Architecture Project",
+            "bullets": [
+              "Led the corporate migration to the Office 365 ecosystem, acting in information architecture and development of SharePoint pages to centralize file management.",
+              "Complete migration management: from hardware/software configuration on workstations to file permission administration, optimizing workflow and cloud file consumption.",
+              "Acted as a technical facilitator, resulting in rapid tool adoption and a significant increase in productivity and collaboration between departments."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "AVIPAM Viagens & Turismo",
+        "role": "Administrative Assistant",
+        "location": "",
+        "period": "August 2022 - August 2023",
+        "projects": [
+          {
+            "title": "Administrative Support and Billing",
+            "bullets": [
+              "Assisted in the company's billing process, ensuring all processes were completed accurately and efficiently.",
+              "Document verification, necessary to ensure all information is complete and correct.",
+              "Requested to assist with other administrative tasks in the company."
+            ]
+          }
+        ]
+      }
+    ]
   },
   "projects": {
     "heading": "Main Projects",

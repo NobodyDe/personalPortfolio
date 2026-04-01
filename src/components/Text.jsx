@@ -1,19 +1,20 @@
-import React from "react";
-import { cva } from "class-variance-authority";
+import React from 'react';
+import { cva } from 'class-variance-authority';
 
 /** @typedef {import("class-variance-authority").VariantProps<typeof textVariants>} TextVariants */
 
-export const textVariants = cva("font-sans", {
+// eslint-disable-next-line react-refresh/only-export-components
+export const textVariants = cva('font-sans', {
   variants: {
     variant: {
-      "body-md": "text-base leading-6 font-normal text-primary",
-      "body-md-secundary": "text-base leading-6 font-normal text-secundary",
-      "heading-lg": "text-xl leading-7 font-bold text-primary",
-      "subHeading-sm": "text-sm leading-5 font-normal text-secundary",
-      inherit: "text-inherit",
+      'body-md': 'text-base leading-6 font-normal text-primary',
+      'body-md-secundary': 'text-base leading-6 font-normal text-secundary',
+      'heading-lg': 'text-xl leading-7 font-bold text-primary',
+      'subHeading-sm': 'text-sm leading-5 font-normal text-secundary',
+      inherit: 'text-inherit',
     },
   },
-  defaultVariants: { variant: "body-md" },
+  defaultVariants: { variant: 'body-md' },
 });
 
 /**
@@ -24,7 +25,8 @@ export const textVariants = cva("font-sans", {
  * @param {React.ReactNode} props.children - Conteúdo do texto
  */
 export default function Text({
-  as: Component = "span",
+  // eslint-disable-next-line no-unused-vars
+  as: Component = 'span',
   variant,
   className,
   children,
