@@ -1,5 +1,6 @@
 import { cva } from "class-variance-authority";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const avatarVariants = cva("rounded-full object-cover", {
   variants: {
     size: {
@@ -12,6 +13,7 @@ export const avatarVariants = cva("rounded-full object-cover", {
 });
 
 export default function Avatar({
+  // eslint-disable-next-line no-unused-vars
   as: Component = "img",
   size,
   className,

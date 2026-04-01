@@ -1,17 +1,18 @@
-import { useTranslation } from "react-i18next";
-import Text from "./Text";
-import social from "../data/socialLinks";
-import { HugeiconsIcon } from "@hugeicons/react";
+import { useTranslation } from 'react-i18next';
+import Text from './Text';
+import social from '../data/socialLinks';
+import { HugeiconsIcon } from '@hugeicons/react';
+import FooterInc from './FooterInc';
 
 export default function Connect() {
   const { t } = useTranslation();
   return (
-    <div className="flex w-full flex-col gap-4 min-h-[50vh] h-full">
-      <Text as="p" variant={"body-md"}>
-        {t("connect.heading")}
+    <div className="flex w-full flex-col gap-4 ">
+      <Text as="p" variant={'body-md'}>
+        {t('connect.heading')}
       </Text>
-      <Text as="p" variant={"body-md-secundary"}>
-        {t("connect.description")}
+      <Text as="p" variant={'body-md-secundary'}>
+        {t('connect.description')}
       </Text>
       <div className="flex flex-row gap-4">
         {social.map((item) => (
@@ -25,11 +26,6 @@ export default function Connect() {
           </Text>
         ))}
       </div>
-      <footer className="text-center py-15">
-        <Text as="p" variant={"body-md-secundary"}>
-          {t("connect.right")}
-        </Text>
-      </footer>
     </div>
   );
 }

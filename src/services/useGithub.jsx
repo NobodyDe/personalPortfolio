@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const cache = {};
 
@@ -37,6 +37,7 @@ export function useGithub(topRepos) {
       }
     };
     fetchRepoData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cacheKey]);
 
   return { projects, loading, error };

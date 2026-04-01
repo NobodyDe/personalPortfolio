@@ -1,5 +1,6 @@
 import { cva } from "class-variance-authority";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const themesVariants = cva(
   "inline-flex items-center justify-center rounded font-sans text-xs font-medium border-non-interactive border",
   {
@@ -17,6 +18,7 @@ export const themesVariants = cva(
 );
 
 export default function Themes({
+  // eslint-disable-next-line no-unused-vars
   as: Component = "span",
   variant,
   size,
