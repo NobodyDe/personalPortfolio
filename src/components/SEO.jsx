@@ -1,17 +1,17 @@
 // src/components/SEO.jsx
-import { Helmet } from "react-helmet-async";
-import { useParams } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
+import { useParams } from 'react-router-dom';
 
 export default function SEO({ title, description }) {
   const { lang } = useParams();
   const fullTitle = title
     ? `${title} — Henrique Santos`
-    : "Henrique Santos — Engenheiro de Software";
+    : 'Henrique Santos — Engenheiro de Software';
 
   return (
     <Helmet>
       {/* Muda o <html lang="..."> dinamicamente */}
-      <html lang={lang || "pt"} />
+      <html lang={lang || 'pt'} />
 
       <title>{fullTitle}</title>
       <meta name="description" content={description} />

@@ -1,13 +1,13 @@
-import { useParams } from "react-router-dom";
-import Avatar from "./Avatar";
-import NavLink from "./NavLink";
-import Text from "./Text";
-import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
+import { useParams } from 'react-router-dom';
+import Avatar from './Avatar';
+import NavLink from './NavLink';
+import Text from './Text';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Sidebar() {
   const { t } = useTranslation();
-  const navItems = t("sidebar.nav", { returnObjects: true });
+  const navItems = t('sidebar.nav', { returnObjects: true });
   const { lang } = useParams();
 
   return (
@@ -15,10 +15,10 @@ export default function Sidebar() {
       <div className="flex md:flex-col gap-2">
         <Avatar src="https://avatars.githubusercontent.com/u/129473274?v=4" />
         <Text as="h2" variant="heading-lg">
-          {t("sidebar.name")}
+          {t('sidebar.name')}
         </Text>
         <Text as="p" variant="subHeading-sm">
-          {t("sidebar.title")}
+          {t('sidebar.title')}
         </Text>
       </div>
       <ul className="md:flex flex-col gap-2 hidden">

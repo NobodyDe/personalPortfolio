@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const cache = {};
 
 export function useGithub(topRepos) {
-  const cacheKey = topRepos.join(",");
+  const cacheKey = topRepos.join(',');
 
   const [projects, setProjects] = useState(cache[cacheKey]?.data || []);
   const [loading, setLoading] = useState(true);
@@ -37,7 +37,7 @@ export function useGithub(topRepos) {
       }
     };
     fetchRepoData();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cacheKey]);
 
   return { projects, loading, error };

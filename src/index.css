@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-background: #100e0e;
@@ -8,7 +8,7 @@
 
   --color-non-interactive: #3a3a3a;
 
-  --font-sans: "Geist Mono", sans-serif;
+  --font-sans: 'Geist Mono', sans-serif;
 }
 
 body {
