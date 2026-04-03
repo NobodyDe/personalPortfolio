@@ -10,5 +10,7 @@ export default defineConfig({
     environment: 'jsdom', // simula o browser
     setupFiles: './src/test/setup.js', // arquivo de setup global
     css: true,
+    exclude: ['e2e/**', 'node_modules/**', 'dist/**'], // Ignora testes do Playwright
+    passWithNoTests: true, // Não falha caso você não tenha criado arquivos de test unitários ainda
   }, // processa CSS nos testes
 });
